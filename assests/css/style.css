@@ -1,5 +1,21 @@
 body {
-    background-color: whitesmoke;
+    background-color: rgba(59, 138, 229, 0.194);
+}
+
+header {
+    background-color: rgba(64, 63, 63, 0.172);
+}
+
+header h1 {
+    color: #000;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 img {
@@ -7,17 +23,32 @@ img {
     border-radius: 75%
 }
 
-.lesson {
-    background-color: lemonchiffon;
+section {
+    display: flex;
+    flex-direction: column;
 }
-/* 
-li {
-    font-weight: 900;
-} */
+
+article {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(246, 174, 65, 0.789);
+}
+
+p {
+    padding: 10px;
+    background-color: bisque;
+}
+
+#about-me {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-align: right;
+    background-color: rgba(246, 237, 65, 0.789);
+}
+
 
 #email {
     font-weight: bold;
-    background-color: lemonchiffon;
 }
 
 
@@ -26,6 +57,6 @@ li {
     background-color: inherit email;
 }
 
-#portfolio {
+#resume {
     font-weight: bold;
 }
