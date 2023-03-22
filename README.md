@@ -1,2 +1,1 @@
-# portfolio
-the second homework assignment/my personal portfolio
+# second-day
