@@ -46,6 +46,12 @@ p {
     background-color: rgba(246, 237, 65, 0.789);
 }
 
+#contact-info {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-align: right;
+    background-color: rgba(246, 237, 65, 0.789)
+}
 
 #email {
     font-weight: bold;
