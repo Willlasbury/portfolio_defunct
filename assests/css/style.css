@@ -1,6 +1,6 @@
 * {
-    font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif ;
-}Medium
+    font-family: Papyrus, 'Arial Narrow', Arial, sans-serif ;
+}
 
 body {
     background-color: rgba(59, 138, 229, 0.194);
@@ -8,7 +8,10 @@ body {
 
 header {
     display: flex;
+    flex-flow: row nowrap;
     align-items: flex-end;
+    justify-content: space-between;
+    font-size: 20px;
     background-color: rgba(64, 63, 63, 0.172);
     padding: 15px 5px;
 }
@@ -16,37 +19,31 @@ header {
 header h1 {
     font: "Montserrat";
     color: #3f64e9;
+    font-size: 30px;
 }
-
-/* .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-} */
 
 header nav {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    text-align: justify;
-}
+    list-style: none;
+    }
 
-header li {
-    font: "Cardo";
+header ul {
     padding-left: 70px;
     font-size: 20px;
+    align-items: center;
 }
-
-ul {
-    list-style-position: inside;
-    margin: 0;
-
+header a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: salmon;
 }
 
 img {
     width: 200px;
-    border-radius: 75%
+    border-radius: 45%;
+    box-shadow: 2px 2px 5px grey;
 }
 
 section {
@@ -65,10 +62,6 @@ p {
     background-color: bisque;
 }
 
-#nav-list {
-    border-right: 100px;
-}
-
 #about-me {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
@@ -83,6 +76,13 @@ p {
     background-color: rgba(246, 237, 65, 0.789)
 }
 
+#contact-info nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    }
+    
 #work {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
