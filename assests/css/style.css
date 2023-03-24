@@ -41,12 +41,6 @@ header a {
     color: salmon;
 }
 
-img {
-    width: 200px;
-    border-radius: 45%;
-    box-shadow: 2px 2px 5px grey;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -63,12 +57,46 @@ p {
     background-color: purple;
 }
 
+.profile-photo {
+    width: 200px;
+    border-radius: 45%;
+    box-shadow: 2px 2px 5px grey;
+
+}
+
+.work-element {
+    width: 49%;
+}
+
 #about-me {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: right;
     background-color: rgba(65, 65, 246, 0.789);
 }
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    background-color: rgba(246, 237, 65, 0.789);
+}
+
+
+#first-work-element {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+/* #work img {
+
+} */
 
 #contact-info {
     background-color: slateblue;
@@ -86,13 +114,6 @@ p {
 
 #contact-info a {
     text-decoration: none;
-}
-#work {
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-    text-align: right;
-    background-color: rgba(246, 237, 65, 0.789)
-    
 }
 
 
