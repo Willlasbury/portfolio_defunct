@@ -1,15 +1,19 @@
 :root {
     --primary-backgroung: rgb(103, 103, 233);
-    --secondary-background: slateblue; 
+    --secondary-background: slateblue;
 }
 
 
 * {
-    font-family: Papyrus, 'Arial Narrow', Arial, sans-serif;
-    border: 3px solid black;
+    font-family: Tahoma, sans-serif;
+    /* border: 3px solid black; */
+    /* padding: 1%; */
+    margin: 1%;
 }
 
 body {
+    /* margin: 1%;
+    border: 1%; */
     background-color: rgba(59, 138, 229, 0.194);
     display: flex;
     flex-flow: row wrap;
@@ -27,48 +31,44 @@ header h1 {
     font-size: 3rem;
     width: 50%;
 }
-header image{
+
+header image {
     height: 70%;
 }
+
 header nav {
-    border:rgba(89, 246, 65, 0.867) 2px solid;
     width: 50%;
     display: flex;
     list-style: none;
-    /* flex-flow: row nowrap; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
-header ul {
-    display: flex;
-    /* align-content: flex-end; */
-}
 header li {
-    display: flex ;
+    display: flex;
     align-items: flex-end;
+    margin-left: 10px;
+    padding-left: 15px;
 }
 
 header a {
+    /* border: 3px solid black; */
     font-size: 1.2rem;
     color: salmon;
-    padding-left: 15px;
     text-decoration: none;
+}
+
+header a:hover {
+    font-weight: 900;
+}
+
+main {
+    border: 3px solid black;
+    width: 100%;
 }
 
 section {
     display: flex;
     flex-direction: column;
-}
-/* 
-article {
-    display: flex;
-    flex-direction: row;
-    background-color: slateblue;
-} */
-
-p {
-    padding: 10px;
-    /* background-color: purple; */
 }
 
 
@@ -89,12 +89,6 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: right;
-}
-
-#meat-and-potatoes {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
 }
 
 #about-me h2 {
@@ -168,5 +162,5 @@ p {
 }
 
 @media screen and (max) {
-    
-}
+
+    /* } */
