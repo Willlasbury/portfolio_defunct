@@ -1,6 +1,7 @@
 :root {
     --primary-backgroung: rgb(103, 103, 233);
     --secondary-background: slateblue;
+    --text-shadow: rgba(0, 0, 0, 0.247)
 }
 
 
@@ -29,6 +30,7 @@ header h1 {
     color: #3f64e9;
     font-size: 3rem;
     width: 50%;
+    text-shadow: 1px 1px 19px var(--text-shadow);
 }
 
 header image {
@@ -58,6 +60,7 @@ header a {
     height:fit-content;
     color: salmon;
     text-decoration: none;
+    text-shadow: 1px 1px 1px var(--text-shadow);
 }
 
 header a:hover {
