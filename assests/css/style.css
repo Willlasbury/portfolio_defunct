@@ -8,7 +8,7 @@
     font-family: Tahoma, sans-serif;
     /* border: 3px solid black; */
     /* padding: 1%; */
-    margin: 1%;
+    /* margin: 1%; */
 }
 
 body {
@@ -26,7 +26,6 @@ header {
 }
 
 header h1 {
-    height: 30%;
     color: #3f64e9;
     font-size: 3rem;
     width: 50%;
@@ -39,20 +38,24 @@ header image {
 header nav {
     width: 50%;
     display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
     list-style: none;
-    /* justify-content: flex-end; */
 }
 
 header li {
     display: flex;
-    align-items: flex-end;
+    align-content: flex-end;
     margin-left: 10px;
-    padding-left: 15px;
 }
 
 header a {
     /* border: 3px solid black; */
-    font-size: 1.2rem;
+    display: flex;
+    align-content: flex-end;
+    font-size: 1.4rem;
+    width: 100%;
+    height:fit-content;
     color: salmon;
     text-decoration: none;
 }
@@ -63,7 +66,6 @@ header a:hover {
 
 main {
     border: 3px solid black;
-    width: 100%;
 }
 
 section {
@@ -160,7 +162,3 @@ section {
 #resume {
     font-weight: bold;
 }
-
-@media screen and (max) {
-
-    /* } */
