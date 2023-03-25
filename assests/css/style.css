@@ -12,10 +12,15 @@
     /* border: 3px solid black; */
     /* margin: .5%; */
 }
-
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border:rgba(28, 30, 33, 0.194) solid 3px;
+    box-shadow: inset 2px 2px 5px grey, 2px 2px 5px grey;
+}
 body {
-    /* margin: 1%;
-    border: 1%; */
+    margin: 1.5%;
     background-color: rgba(59, 138, 229, 0.194);
     display: flex;
     flex-flow: row wrap;
@@ -23,9 +28,10 @@ body {
 
 h2 {
     font-size: 2.5rem;
+    text-align: right;
     display: flex;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 20%;
     text-shadow: 0px 3px 15px var(--text-shadow);
     color: var(--primary-text-color)
@@ -78,16 +84,6 @@ header a:hover {
     font-weight: 900;
 }
 
-/* main {
-    border: 3px solid black;
-} */
-
-main article {
-
-}
-
-
-
 .profile-photo {
     width: 200px;
     border-radius: 45%;
@@ -104,15 +100,6 @@ main article {
     text-align: right;
 }
 
-#about-me h2 {
-    font-size: 2.5rem;
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
-    width: 20%;
-    text-shadow: 0px 3px 15px var(--text-shadow);
-    color: var(--primary-text-color)
-}
 
 #about-me p {
     font-size: 1.5rem;
@@ -125,34 +112,21 @@ main article {
 }
 
 #work {
-    /* background-color: rgba(246, 237, 65, 0.789); */
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
-    /* justify-content: space-evenly; */
     font-family: "Roboto", sans-serif;
     font-size: 25px;
 }
 
 
-/* 
-#work h2 {
-    font-size: 2.5rem;
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
-    width: 20%;
-    text-shadow: 0px 3px 15px var(--text-shadow);
-    color: var(--primary-text-color)
-} */
-
 #work section {
     display: -webkit-inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
-    align-content: stretch;
+    justify-content: space-between;
+    width: 55%;
+    padding: 0 10%;
+    align-content: center;
 }
 
 .work-element {
@@ -160,8 +134,12 @@ main article {
 }
 
 #first-work-element {
+    display: flex;
     flex-grow: 1;
     width: 100%;
+    /* background-image: url("../images/alaskaBridge.jpeg");
+    background-size:cover;
+    background-position: center center; */
 }
 
 #contact-info {
@@ -172,7 +150,7 @@ main article {
 
 #contact-info ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     list-style: none;
