@@ -1,7 +1,9 @@
 :root {
     --primary-backgroung: rgb(103, 103, 233);
     --secondary-background: slateblue;
-    --text-shadow: rgba(0, 0, 0, 0.247)
+    --text-shadow: rgba(0, 0, 0, 0.247);
+    --primary-text-color: #3f64e9;
+    --secondary-text-color: slateblue;
 }
 
 
@@ -27,7 +29,7 @@ header {
 }
 
 header h1 {
-    color: #3f64e9;
+    color: var(--primary-text-color);
     font-size: 3rem;
     width: 50%;
     text-shadow: 1px 1px 19px var(--text-shadow);
@@ -57,10 +59,10 @@ header a {
     align-content: flex-end;
     font-size: 1.4rem;
     width: 100%;
-    height:fit-content;
-    color: salmon;
+    height: fit-content;
+    color: var(--secondary-text-color);
     text-decoration: none;
-    text-shadow: 1px 1px 1px var(--text-shadow);
+    text-shadow: 1px 1px 5px var(--text-shadow);
 }
 
 header a:hover {
@@ -68,7 +70,7 @@ header a:hover {
 }
 
 main {
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 section {
@@ -89,19 +91,31 @@ section {
 }
 
 #about-me {
-    /* background-color: rgba(65, 65, 246, 0.789); */
+    display: flex;
+    /* border: 3px solid black; */
     display: flex;
     font-family: "Roboto", sans-serif;
-    font-size: 25px;
     text-align: right;
 }
 
 #about-me h2 {
-    width: 20%
+    font-size: 2.5rem;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 20%;
+    text-shadow: 0px 3px 15px var(--text-shadow);
+    color: var(--primary-text-color)
 }
 
 #about-me p {
-    width: 80%
+    font-size: 1.5rem;
+    margin-top: 4%;
+    margin-left: 2%;
+    /* border: 3px solid black; */
+    width: 70%;
+    display: flex;
+    text-align: left;
 }
 
 #work {
