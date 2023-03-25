@@ -1,3 +1,9 @@
+:root {
+    --primary-backgroung: rgb(103, 103, 233);
+    --secondary-background: slateblue; 
+}
+
+
 * {
     font-family: Papyrus, 'Arial Narrow', Arial, sans-serif;
     border: 3px solid black;
@@ -6,40 +12,44 @@
 body {
     background-color: rgba(59, 138, 229, 0.194);
     display: flex;
-    flex-direction: column;
-
+    flex-flow: row wrap;
 }
 
 header {
+    width: 100%;
     background-color: rgba(64, 63, 63, 0.172);
     display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    font-size: 20px;
-    padding: 15px 5px;
 }
 
 header h1 {
+    height: 30%;
     color: #3f64e9;
-    font: "Montserrat";
-    font-size: 30px;
+    font-size: 3rem;
+    width: 50%;
 }
-
+header image{
+    height: 70%;
+}
 header nav {
+    border:rgba(89, 246, 65, 0.867) 2px solid;
+    width: 50%;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     list-style: none;
+    /* flex-flow: row nowrap; */
+    justify-content: flex-end;
 }
 
 header ul {
-    padding-left: 70px;
-    font-size: 20px;
-    align-items: center;
+    display: flex;
+    /* align-content: flex-end; */
+}
+header li {
+    display: flex ;
+    align-items: flex-end;
 }
 
 header a {
+    font-size: 1.2rem;
     color: salmon;
     padding-left: 15px;
     text-decoration: none;
@@ -118,7 +128,7 @@ p {
 }
 
 #first-work-element {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     width: 100%;
     text-align: center;
 
@@ -155,4 +165,8 @@ p {
 
 #resume {
     font-weight: bold;
+}
+
+@media screen and (max) {
+    
 }
