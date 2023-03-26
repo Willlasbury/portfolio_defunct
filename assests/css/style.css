@@ -1,6 +1,6 @@
 :root {
     --primary-backgroung: rgb(103, 103, 233);
-    --secondary-background: slateblue;
+    --secondary-background: rgb(95, 158, 229);
     --text-shadow: rgba(0, 0, 0, 0.247);
     --primary-text-color: #3f64e9;
     --secondary-text-color: slateblue;
@@ -12,28 +12,14 @@
     /* border: 3px solid black; */
     /* margin: .5%; */
 }
-img{
+
+/* img {
     width: 200px;
     height: 200px;
     border-radius: 15px;
-    border:rgba(28, 30, 33, 0.194) solid 3px;
+    border: rgba(28, 30, 33, 0.194) solid 3px;
     box-shadow: inset 2px 2px 5px grey, 2px 2px 5px grey;
-}
-
-img:hover{ 
-    animation: shakey-hover ease 0.5s;
-
-}
-
-@keyframes shakey-hover {
-    0% {
-       transform: translate(1px, 1px);
-    }
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
+} */
 
 body {
     margin: 1.5%;
@@ -128,35 +114,70 @@ header a:hover {
     text-align: left;
 }
 
-#work {
+/* #work {
     display: flex;
     justify-content: space-around;
     font-family: "Roboto", sans-serif;
     font-size: 25px;
-}
+} */
 
 
-#work section {
-    display: -webkit-inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#work {
+    display: flex;
+    flex-wrap: row wrap;
     justify-content: space-between;
-    width: 55%;
-    padding: 0 10%;
+    /* width:%; */
+    /* padding: 0 10%; */
     align-content: center;
 }
 
-.work-element {
-    width: 45%;
+#first-work-element:hover, .work-element:hover {
+    animation: shakey-hover ease 0.5s;
+
+}
+
+@keyframes shakey-hover {
+    0% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+#work ul {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#work article {
+    background-image: linear-gradient(to right, var(--primary-backgroung) , var(--secondary-background));;
+    border: var(--primary-backgroung) solid 2px;
+    margin: 1%;
+}
+
+#work p {
+    text-align: center;
 }
 
 #first-work-element {
     display: flex;
     flex-grow: 1;
-    width: 100%;
+    width: 90%;
+    height: 45%;
     /* background-image: url("../images/alaskaBridge.jpeg");
     background-size:cover;
     background-position: center center; */
+}
+
+.work-element {
+    display: flex;
+    align-self: auto;
+    width: 45%;
+    height: 45%;
 }
 
 #contact-info {
