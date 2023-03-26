@@ -245,42 +245,18 @@ header a:hover {
 
 h2 {
     font-size: 2rem;
-    /* text-align: right; */
-    /* display: flex; */
-    /* align-content: center; */
-    /* justify-content: flex-end; */
-    /* width: 20%; */
-    /* text-shadow: 0px 3px 15px var(--shadow); */
-    /* color: var(--primary-text-color); */
-    /* border-right: 3px solid var(--secondary-text-color); */
-    /* padding-right: 2%; */
 
 }
 
-/* h2 {
-    font-size: 2.5rem;
-    text-align: right;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    width: 20%;
-    text-shadow: 0px 3px 15px var(--shadow);
-    color: var(--primary-text-color);
-    border-right: 3px solid var(--secondary-text-color);
-    padding-right: 2%;
-
-} */
     
     header {
-        width: 100%;
-        display: flex;
+   
         flex-direction: column;
         align-items: center;
        
-        box-shadow:  0px 0px 30px var(--shadow);
-        border: solid var(--tertiary-background) 1px;
-        border-radius: 10px;
+       
     }
+
 
     header figure {
         width: 100%;
@@ -291,30 +267,13 @@ h2 {
     }
     
     header nav {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        list-style: none;
+        width: 95%;
     }
 
     #contact-info li {
-        /* background-color: salmon; */
-        display: flex;
         flex-direction: column;
-        /* justify-content: flex-start; */
-        /* align-content: center; */
-        font-size: 1rem;
     }
     
-    #contact-info ul {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 80%;
-        list-style: none;
-    }
-}
 
 @media screen and (max-width: 682px) {
     main {
