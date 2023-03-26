@@ -4,8 +4,8 @@
     --secondary-background: rgb(95, 158, 229);
     --text-shadow: rgba(0, 0, 0, 0.247);
     --primary-text-color: #3f64e9;
-    --secondary-text-color: slateblue;
-    --tertiary-text-color: rgb(47, 0, 75);
+    --secondary-text-color: rgb(85, 67, 203);
+    --tertiary-text-color: rgb(54, 0, 85);
 }
 
 
@@ -50,11 +50,18 @@ header {
     background-color: var(--primary-background);
     display: flex;
 }
+header figure {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
 
-header h1 {
+h1 {
+    /* background-color: salmon; */
+    align-self: top;
     color: var(--primary-text-color);
     font-size: 3rem;
-    width: 50%;
+    /* width: 50%; */
     text-shadow: 1px 1px 19px var(--text-shadow);
 }
 
@@ -92,10 +99,10 @@ header a:hover {
     font-weight: 900;
 }
 
-.profile-photo {
-    width: 200px;
-    border-radius: 45%;
-    box-shadow: 2px 2px 5px grey;
+#profile-photo {
+    width: 100px;
+    border-radius: 0% 45%;
+    /* box-shadow: 2px 2px 5px grey; */
 
 }
 
