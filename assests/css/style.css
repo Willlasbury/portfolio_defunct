@@ -56,6 +56,8 @@ header {
     border: solid var(--tertiary-background) 1px;
     border-radius: 10px;
 }
+
+
 header figure {
     /* width: 50%; */
     margin: 2% 1%;
@@ -175,6 +177,7 @@ header a:hover {
 #work figure {
     background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background));
     border: var(--primary-backgroung) solid 2px;
+    box-shadow: inset 0px 0px 5px var(--shadow), 0px 0px 20px var(--shadow);
     margin: 1%;
     border-radius: 7px 20px;
 }
@@ -198,7 +201,7 @@ header a:hover {
 
 #contact-info ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 80%;
     list-style: none;
@@ -208,10 +211,12 @@ header a:hover {
     /* background-color: salmon; */
     display: flex;
     justify-content: flex-start;
-    align-content: center;
+    /* align-content: space-around; */
     font-size: 1rem;
 }
-
+#contact-info p {
+    font-size: 1.2rem;
+}
 #contact-info a {
     /* background-color: chartreuse; */
     /* display: flex; */
@@ -233,4 +238,110 @@ header a:hover {
 
 #resume {
     font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    
+
+h2 {
+    font-size: 2rem;
+    text-align: right;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    width: 20%;
+    text-shadow: 0px 3px 15px var(--shadow);
+    color: var(--primary-text-color);
+    border-right: 3px solid var(--secondary-text-color);
+    padding-right: 2%;
+
+}
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        box-shadow:  0px 0px 30px var(--shadow);
+        border: solid var(--tertiary-background) 1px;
+        border-radius: 10px;
+    }
+
+    header figure {
+        width: 100%;
+        margin: 2% 1%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    
+    header nav {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #contact-info li {
+        /* background-color: salmon; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* align-content: center; */
+        font-size: 1rem;
+    }
+    
+    #contact-info ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 682px) {
+
+    #work ul {
+        width: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+/* 
+    #first-work-element {
+        display: flex;
+        
+        width: 90%;
+        height: 45%;
+    } */
+    
+    #first-work-element, .work-element {
+        width: 100%;
+        display: flex;
+        align-self: auto;
+        width: 48%;
+        height: 45%;
+    }
+
+    #work figure {
+        width: 100%;
+        background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background));
+        border: var(--primary-backgroung) solid 2px;
+        box-shadow: inset 0px 0px 5px var(--shadow), 0px 0px 20px var(--shadow);
+        margin: 1%;
+        border-radius: 7px 20px;
+    }
+    
+    #work figcaption {
+        font-size: 1.2rem;
+        color: var(--tertiary-text-color);
+        list-style: none;
+        position: relative;
+        top: 50%;
+        left: 3%;
+    }
 }
