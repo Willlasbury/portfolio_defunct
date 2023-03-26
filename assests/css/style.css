@@ -1,9 +1,11 @@
 :root {
-    --primary-backgroung: rgb(103, 103, 233);
+    --primary-background: rgba(187, 171, 203, 0.561);
+    --tertiary-background: rgb(103, 103, 233);
     --secondary-background: rgb(95, 158, 229);
     --text-shadow: rgba(0, 0, 0, 0.247);
     --primary-text-color: #3f64e9;
     --secondary-text-color: slateblue;
+    --tertiary-text-color: rgb(47, 0, 75);
 }
 
 
@@ -36,13 +38,16 @@ h2 {
     justify-content: flex-end;
     width: 20%;
     text-shadow: 0px 3px 15px var(--text-shadow);
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    border-right: 3px solid var(--secondary-text-color);
+    padding-right: 2%;
+    
 }
 
 
 header {
     width: 100%;
-    background-color: rgba(64, 63, 63, 0.172);
+    background-color: var(--primary-background);
     display: flex;
 }
 
@@ -100,17 +105,18 @@ header a:hover {
     /* border: 3px solid black; */
     display: flex;
     font-family: "Roboto", sans-serif;
-    text-align: right;
 }
 
 
 #about-me p {
+    color: var(--tertiary-text-color);
     font-size: 1.5rem;
     margin-top: 4%;
     margin-left: 2%;
     /* border: 3px solid black; */
     width: 70%;
     display: flex;
+    text-align: top;
     text-align: left;
 }
 
@@ -126,7 +132,7 @@ header a:hover {
     display: flex;
     flex-wrap: row wrap;
     justify-content: space-between;
-    /* width:%; */
+    min-height: 50%;
     /* padding: 0 10%; */
     align-content: center;
 }
@@ -153,31 +159,30 @@ header a:hover {
     justify-content: center;
 }
 
-#work article {
-    background-image: linear-gradient(to right, var(--primary-backgroung) , var(--secondary-background));;
-    border: var(--primary-backgroung) solid 2px;
-    margin: 1%;
-}
-
-#work p {
-    text-align: center;
-}
 
 #first-work-element {
     display: flex;
     flex-grow: 1;
     width: 90%;
     height: 45%;
-    /* background-image: url("../images/alaskaBridge.jpeg");
-    background-size:cover;
-    background-position: center center; */
 }
 
 .work-element {
     display: flex;
     align-self: auto;
-    width: 45%;
+    width: 48%;
     height: 45%;
+}
+
+#work figure {
+    background-image: linear-gradient(to right, var(--tertiary-background) , var(--secondary-background));;
+    border: var(--primary-backgroung) solid 2px;
+    margin: 1%;
+}
+
+#work figcaption {
+    font-size: 1.5rem;
+    color: var(--tertiary-text-color);
 }
 
 #contact-info {
