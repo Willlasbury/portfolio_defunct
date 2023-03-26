@@ -41,7 +41,7 @@ h2 {
     color: var(--primary-text-color);
     border-right: 3px solid var(--secondary-text-color);
     padding-right: 2%;
-    
+
 }
 
 
@@ -103,42 +103,31 @@ header a:hover {
 #about-me {
     display: flex;
     /* border: 3px solid black; */
-    display: flex;
-    font-family: "Roboto", sans-serif;
 }
 
 
 #about-me p {
+    /* border: 3px solid black; */
     color: var(--tertiary-text-color);
     font-size: 1.5rem;
-    margin-top: 4%;
     margin-left: 2%;
-    /* border: 3px solid black; */
-    width: 70%;
+    width: 80%;
     display: flex;
-    text-align: top;
-    text-align: left;
 }
-
-/* #work {
-    display: flex;
-    justify-content: space-around;
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-} */
 
 
 #work {
     display: flex;
     flex-wrap: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     min-height: 50%;
-    /* padding: 0 10%; */
     align-content: center;
 }
 
-#first-work-element:hover, .work-element:hover {
+#first-work-element:hover,
+.work-element:hover {
     animation: shakey-hover ease 0.5s;
+    box-shadow: inset 0px 0px 10px var(--text-shadow), 0px 0px 20px var(--text-shadow);
 
 }
 
@@ -175,20 +164,27 @@ header a:hover {
 }
 
 #work figure {
-    background-image: linear-gradient(to right, var(--tertiary-background) , var(--secondary-background));;
+    background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background));
     border: var(--primary-backgroung) solid 2px;
     margin: 1%;
+    border-radius: 7px 20px;
 }
 
 #work figcaption {
     font-size: 1.5rem;
     color: var(--tertiary-text-color);
+    list-style: none;
+    position: relative;
+    top: 50%;
+    left: 3%;
 }
+
+
 
 #contact-info {
     /* background-color: rgba(89, 246, 65, 0.867); */
     display: flex;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 #contact-info ul {
