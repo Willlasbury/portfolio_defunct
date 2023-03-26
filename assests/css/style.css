@@ -196,6 +196,7 @@ header a:hover {
 }
 
 #contact-info li {
+    /* background-color: salmon; */
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -203,9 +204,12 @@ header a:hover {
 }
 
 #contact-info a {
-    display: flex;
+    /* background-color: chartreuse; */
+    /* display: flex; */
     text-decoration: none;
-    align-content: center;
+    align-self: center;
+    padding-left: 3%;
+    /* vertical-align: middle; */
 }
 
 
