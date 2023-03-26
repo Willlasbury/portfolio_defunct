@@ -6,15 +6,15 @@
     --primary-text-color: #3f64e9;
     --secondary-text-color: rgb(85, 67, 203);
     --tertiary-text-color: rgb(54, 0, 85);
+    --ermine-sample-color1: #A38B69;
+    --ermine-sample-color2: #7D8A9D;
 }
 
 
 * {
     font-family: Tahoma, sans-serif;
-    /* border: 3px solid black; */
-    /* margin: .5%; */
+    transition: ease all .5s;
 }
-
 
 body {
     margin: 1.5%;
@@ -24,11 +24,9 @@ body {
 }
 
 h1 {
-    /* background-color: salmon; */
     align-self: top;
     color: var(--primary-text-color);
     font-size: 3rem;
-    /* width: 50%; */
     text-shadow: 1px 1px 19px var(--shadow);
 }
 
@@ -49,17 +47,16 @@ h2 {
 
 header {
     width: 100%;
-    background-image: linear-gradient(135deg,  var(--primary-background), var(--secondary-background));
+    background-image: linear-gradient(135deg, var(--primary-background), var(--secondary-background));
     display: flex;
     justify-content: space-between;
-    box-shadow:  0px 0px 30px var(--shadow);
+    box-shadow: 0px 0px 30px var(--shadow);
     border: solid var(--tertiary-background) 1px;
     border-radius: 10px;
 }
 
 
 header figure {
-    /* width: 50%; */
     margin: 2% 1%;
     display: flex;
     flex-direction: column;
@@ -76,7 +73,6 @@ header nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    list-style: none;
 }
 
 header li {
@@ -87,7 +83,6 @@ header li {
 }
 
 header a {
-    /* border: 3px solid black; */
     display: flex;
     align-content: flex-end;
     font-size: 1.4rem;
@@ -107,18 +102,15 @@ header a:hover {
     border-radius: 0% 45%;
     box-shadow: 2px 2px 10px var(--shadow), 2px 2px 10px var(--shadow) inset;
     border: solid var(--shadow) 1px
-
 }
 
 
 #about-me {
     display: flex;
-    /* border: 3px solid black; */
 }
 
 
 #about-me p {
-    /* border: 3px solid black; */
     color: var(--tertiary-text-color);
     font-size: 1.5rem;
     margin-left: 2%;
@@ -130,7 +122,6 @@ header a:hover {
 #work {
     display: flex;
     flex-wrap: row wrap;
-    /* justify-content: space-between; */
     min-height: 50%;
     align-content: center;
 }
@@ -175,17 +166,24 @@ header a:hover {
 }
 
 #work figure {
-    background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background));
+    background-image: url("../images/ermineStockPhoto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+/* I prefer the linear gradient background so I will save this. But I think I need to use an image as per the instructions */
+    /* background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background)); */
     border: var(--primary-backgroung) solid 2px;
     box-shadow: inset 0px 0px 5px var(--shadow), 0px 0px 20px var(--shadow);
     margin: 1%;
     border-radius: 7px 20px;
 }
 
-#work figcaption {
+#work a {
+    height: 50%;
+    background-image: linear-gradient(135deg, var(--ermine-sample-color1), var(--ermine-sample-color2));
+    border-radius: 10px;
     font-size: 1.5rem;
     color: var(--tertiary-text-color);
-    list-style: none;
+    text-decoration: none;
     position: relative;
     top: 50%;
     left: 3%;
@@ -194,9 +192,7 @@ header a:hover {
 
 
 #contact-info {
-    /* background-color: rgba(89, 246, 65, 0.867); */
     display: flex;
-    /* font-size: 25px; */
 }
 
 #contact-info ul {
@@ -208,22 +204,19 @@ header a:hover {
 }
 
 #contact-info li {
-    /* background-color: salmon; */
     display: flex;
     justify-content: flex-start;
-    /* align-content: space-around; */
     font-size: 1rem;
 }
+
 #contact-info p {
     font-size: 1.2rem;
 }
+
 #contact-info a {
-    /* background-color: chartreuse; */
-    /* display: flex; */
     text-decoration: none;
     align-self: center;
     padding-left: 3%;
-    /* vertical-align: middle; */
 }
 
 
@@ -241,20 +234,19 @@ header a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    
 
-h2 {
-    font-size: 2rem;
+    h2 {
+        font-size: 2rem;
 
-}
+    }
 
-    
+
     header {
-   
+
         flex-direction: column;
         align-items: center;
-       
-       
+
+
     }
 
 
@@ -265,7 +257,7 @@ h2 {
         flex-direction: row-reverse;
         justify-content: space-evenly;
     }
-    
+
     header nav {
         width: 95%;
     }
@@ -276,7 +268,7 @@ h2 {
 }
 
 @media screen and (max-width: 682px) {
-    
+
     h2 {
         justify-content: flex-start;
         font-size: 2.5rem;
@@ -285,12 +277,12 @@ h2 {
         border-right: none;
         margin: 2% 2%
     }
-    
+
     #about-me {
         flex-flow: column;
     }
-    
-    
+
+
     #about-me p {
         width: 100%;
         margin-left: 0;
@@ -298,51 +290,41 @@ h2 {
 
     #work {
         flex-flow: column nowrap;
-        /* justify-content: space-between; */
-        /* min-height: 50%; */
-        /* align-content: center; */
+        min-height: auto;
+
     }
 
     #work ul {
-
-        width: 90%;
+        width: 100%;
         padding-left: 0;
-        padding-right: 3%;
-        flex-flow: column nowrap;
-        align-self: center;
     }
 
     #work figure {
         width: 100%;
-        background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background));
-        border: var(--primary-backgroung) solid 2px;
-        box-shadow: inset 0px 0px 5px var(--shadow), 0px 0px 20px var(--shadow);
-        margin: 1%;
-        border-radius: 7px 20px;
     }
     
-    #work figcaption {
-        font-size: 1.2rem;
-        color: var(--tertiary-text-color);
-        list-style: none;
-        position: relative;
-        top: 50%;
-        left: 3%;
+    #contact-info {
+        flex-flow: column nowrap;
     }
 
-    #contact-info li {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: flex-start; */
-        /* align-content: center; */
-        font-size: 1rem;
-    }
-    
     #contact-info ul {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 80%;
-        list-style: none;
+        flex-flow: row nowrap;
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-around;
+        align-items: flex-start;
     }
+
+    #contact-info li p {
+        margin: 0;
+        position: relative;
+        right: 10px;
+
+    }
+
+    #contact-info li a {
+        margin-top: 1%;
+    }
+
+
 }
