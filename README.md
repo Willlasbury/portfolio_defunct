@@ -9,4 +9,4 @@ This uses a simple HTML5 and CSS structure to create a visual representation of 
 
 
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![photo of William's Portfolio](./assests/images/Screenshot%202023-03-27%20at%205.25.48%20PM.png "Will's Portfolio")
