@@ -131,7 +131,7 @@ header a:hover {
     0% {
         transform: translate(1px, 1px);
     }
-
+    
     100% {
         transform: translate(0px, 0px);
     }
@@ -158,7 +158,7 @@ header a:hover {
     display: flex;
     align-self: auto;
     width: 48%;
-    height: 30%;
+    height: 25%;
 }
 
 #first-work-element:hover,
@@ -167,12 +167,11 @@ header a:hover {
     box-shadow: inset 0px 0px 10px var(--shadow), 0px 0px 20px var(--shadow);
 
 }
-
 #work figure {
     background-image: url("../images/ermineStockPhoto.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* I prefer the linear gradient background so I will save this. But I think I need to use an image as per the instructions */
+/* I prefer the linear gradient background so I will save this. But I think I need to use an image as per the instructions */
     /* background-image: linear-gradient(to right, var(--tertiary-background), var(--secondary-background)); */
     border: var(--primary-backgroung) solid 2px;
     box-shadow: inset 0px 0px 5px var(--shadow), 0px 0px 20px var(--shadow);
@@ -301,11 +300,12 @@ header a:hover {
         width: 100%;
         padding-left: 0;
     }
+   
 
-    figure {
+    #work figure {
         width: 100%;
     }
-
+    
     #contact-info {
         flex-flow: column nowrap;
     }
