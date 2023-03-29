@@ -12,6 +12,7 @@ This uses a simple HTML5 and CSS structure to create a visual representation of 
 ![photo of William's Portfolio at desktop size](./assests/images/desktop-view.png "Will's Portfolio")
 
 ## Tablet Screen
-![photo of William's Portfolio at tablet size](./assests/images/tablet-view.png"Will's Portfolio")
+![photo of William's Portfolio at tablet size](./assests/images/tablet-view.png "Will's Portfolio")
+
 ## Mobile Screen
 ![photo of William's Portfolio at mobile size](./assests/images/mobile-view.png "Will's Portfolio")
