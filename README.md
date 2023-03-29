@@ -8,5 +8,10 @@ potential employers.
 This uses a simple HTML5 and CSS structure to create a visual representation of my skills
 
 
-## Desktop screen
-![photo of William's Portfolio](./assests/images/Screenshot%202023-03-27%20at%205.25.48%20PM.png "Will's Portfolio")
+## Desktop Screen
+![photo of William's Portfolio at desktop size](./assests/images/desktop-view.png "Will's Portfolio")
+
+## Tablet Screen
+![photo of William's Portfolio at tablet size](./assests/images/tablet-view.png"Will's Portfolio")
+## Mobile Screen
+![photo of William's Portfolio at mobile size](./assests/images/mobile-view.png "Will's Portfolio")
